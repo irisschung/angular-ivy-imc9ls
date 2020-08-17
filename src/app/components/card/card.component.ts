@@ -7,8 +7,8 @@ import { Component, Input } from '@angular/core';
 })
 export class CardComponent {
   @input()
-  public header = 'My fancy header'
-  public body = ' my fancy paragraph'; 
+  public header = "My fancy header"
+  public body = "my fancy paragraph"; 
 
   public onOpenClick() {
     console.log('hola!');
