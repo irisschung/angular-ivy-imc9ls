@@ -6,11 +6,13 @@ import { Component, Input } from '@angular/core';
   styleUrls: [ './card.component.scss' ]
 })
 export class CardComponent {
-  @input()
-  public header = "My fancy header"
-  public body = "my fancy paragraph"; 
+  @input()header
+  @input() body;
+
+  @Output() open = new EventEmitter(); 
 
   public onOpenClick() {
-    console.log('hola!');
+    console.log('hola! from CardComponent!');
+    this.open.emit();
   }
 }
